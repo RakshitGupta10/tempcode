@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon-Style Product Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eaeaea;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .product-section {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .image-gallery {
+      flex: 1;
+      min-width: 300px;
+    }
+    .image-gallery img {
+      width: 100%;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+    .product-details {
+      flex: 2;
+      min-width: 300px;
+    }
+    .product-title {
+      font-size: 1.8em;
+      font-weight: 600;
+      margin: 0 0 10px;
+    }
+    .product-rating {
+      display: flex;
+      align-items: center;
+      color: #f0c14b;
+      font-size: 1em;
+      margin-bottom: 10px;
+    }
+    .product-price {
+      color: #B12704;
+      font-size: 1.6em;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .availability {
+      color: #007600;
+      font-size: 1.1em;
+      margin: 5px 0;
+    }
+    .description {
+      font-size: 1em;
+      color: #555;
+      line-height: 1.5;
+      margin: 15px 0;
+    }
+    .add-to-cart-section {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 5px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .add-to-cart-btn {
+      background-color: #FFA41C;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      width: 100%;
+      font-weight: bold;
+    }
+    .add-to-cart-btn:hover {
+      background-color: #FF8C00;
+    }
+    .product-specs {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+      font-size: 1em;
+    }
+    .product-specs li {
+      color: #333;
+      padding: 5px 0;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Product Section -->
+  <div class="product-section">
+    
+    <!-- Image Gallery -->
+    <div class="image-gallery">
+      <img src="https://via.placeholder.com/400x400" alt="Product Image">
+    </div>
+
+    <!-- Product Details -->
+    <div class="product-details">
+      <h1 class="product-title">Coffee and Connect - Limited Edition Experience!</h1>
+      <div class="product-rating">★★★★☆ (4.5)</div>
+      <p class="product-price">Priceless (but coffee’s on me!)</p>
+      <p class="availability">In High Demand – Only one slot left!</p>
+      <p class="description">Get ready for a coffee date like no other! Imagine a cozy spot, warm drinks, and a whole lot of laughs – just you and me, chatting away like we’ve known each other forever. This isn’t just any coffee meetup; it’s a blend of good vibes, interesting conversation, and maybe even a spark or two. Think of it as an invitation to smile a little more, laugh a little louder, and maybe share something sweet (besides the coffee).</p>
+      
+      <h3>Specifications</h3>
+      <ul class="product-specs">
+        <li><b>Conversation Quality</b>: 5 stars ⭐⭐⭐⭐⭐ – Guaranteed good times and maybe a few laughs.</li>
+        <li><b>Atmosphere:</b> Relaxed, fun, and caffeine-fueled ☕</li>
+        <li><b>Duration:</b> As long as the coffee and conversation flow</li>
+        <li><b>Bonus Feature:</b> You’ll get to experience my best coffee-inspired puns – free of charge!</li>
+      </ul>
+    </div>
+
+    <!-- Add to Cart Section -->
+    <div class="add-to-cart-section">
+      <p class="product-price">6 PM today?</p>
+      <button class="add-to-cart-btn" onclick="addToCart()">YES!!</button>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  function addToCart() {
+    alert("Your date has been fixed!");
+  }
+</script>
+
+</body>
+</html>
